@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theater Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Movie Tickets</h1>
+
+        <label for="movie">Select a Movie:</label>
+        <select id="movie">
+            <option value="inception">Inception</option>
+            <option value="interstellar">Interstellar</option>
+            <option value="tenet">Tenet</option>
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date">
+
+        <label for="time">Select Time:</label>
+        <select id="time">
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+        </select>
+
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" min="1" max="10" value="1">
+
+        <h2>Select Your Seats:</h2>
+        <div id="seatMap"></div>
+
+        <h2>Payment Method:</h2>
+        <select id="paymentMethod">
+            <option value="">Select Payment Method</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="applePay">Apple Pay</option>
+        </select>
+
+        <button id="bookButton">Book Now</button>
+
+        <div id="confirmation" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
